@@ -1,0 +1,11 @@
+{
+  "description": "飞书桥接权限审批：仅处理来自已绑定群且精确关联当前轮次的任务。",
+  "hooks": {
+    "PermissionRequest": [{"hooks": [{
+      "type": "command",
+      "command": "/absolute/path/to/feishu-codex-bridge/.venv/bin/python /absolute/path/to/feishu-codex-bridge/bridge/approvals.py",
+      "timeout": 315,
+      "statusMessage": "等待飞书审批（管理员或本条任务发起人）"
+    }]}]
+  }
+}

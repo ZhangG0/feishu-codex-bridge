@@ -1,0 +1,18 @@
+.venv/
+__pycache__/
+*.pyc
+config.json
+.env
+var/
+work/
+.DS_Store
+
+# Machine-specific service configuration and private research.
+/deploy/com.zeo.feishu-codex-bridge.plist
+.env.*
+*.sqlite*
+*.db*
+*.log
+*.pem
+*.key
+/docs/alternatives.md

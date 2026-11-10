@@ -1,0 +1,37 @@
+{
+  "codex_command": [
+    "codex",
+    "app-server",
+    "--stdio"
+  ],
+  "send_enabled": false,
+  "send_transport": "desktop_queue",
+  "codex_queue_command": [
+    "codex",
+    "queue"
+  ],
+  "exclusive_thread_confirmed": false,
+  "bot_open_id": "",
+  "database": "var/bridge.sqlite3",
+  "poll_seconds": 5,
+  "max_pending_per_thread": 30,
+  "bindings": [
+    {
+      "chat_id": "oc_REPLACE",
+      "alias": "项目A",
+      "thread_id": "REPLACE",
+      "forward_desktop_replies": true
+    }
+  ],
+  "approvals": {
+    "enabled": false,
+    "admin_open_ids": []
+  },
+  "workflow": {
+    "enabled": false,
+    "url": "http://127.0.0.1:4317",
+    "token_file": "../workflow/.local/workflow.token",
+    "spool_directory": "var/workflow-ingress",
+    "project_key": "demo"
+  }
+}
